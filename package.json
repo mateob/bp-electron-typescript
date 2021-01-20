@@ -7,7 +7,7 @@
     "compile": "tsc && copyfiles -f src/**/*.html dist",
     "start": "yarn compile && electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make dist"
   },
   "keywords": ["Electron", "TypeScript"],
   "author": "Jonatan Lima <jotanlima@gmail.com>",
