@@ -4,6 +4,13 @@
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "./build"
-  }
+    "outDir": "./dist",
+    "rootDirs": [
+      "./src",
+    ],
+  },
+  "exclude": [
+    "./node_modules/*",
+    "dist"
+  ]
 }

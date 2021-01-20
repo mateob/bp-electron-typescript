@@ -2,17 +2,16 @@
   "name": "electron-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "build/main.js",
+  "main": "dist/main.js",
   "scripts": {
-    "compile": "tsc && copyfiles -f src/index.html build",
-    "start:ts": "yarn compile && electron",
+    "compile": "tsc && copyfiles -f src/**/*.html dist",
     "start": "yarn compile && electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["Electron", "TypeScript"],
+  "author": "Jonatan Lima <jotanlima@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
     "@electron-forge/maker-deb": "^6.0.0-beta.54",
